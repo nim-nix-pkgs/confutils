@@ -1,0 +1,23 @@
+{
+  description = ''Simplified handling of command line options and config files'';
+
+  inputs.flakeNimbleLib.owner = "riinr";
+  inputs.flakeNimbleLib.ref   = "master";
+  inputs.flakeNimbleLib.repo  = "nim-flakes-lib";
+  inputs.flakeNimbleLib.type  = "github";
+  inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
+  
+  inputs."confutils-master".url = "path:./master";
+  inputs."confutils-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."confutils-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
+  let 
+    lib  = flakeNimbleLib.lib;
+    args = ["self" "nixpkgs" "flakeNimbleLib"];
+  in lib.mkProjectOutput {
+    inherit self nixpkgs;
+    meta = builtins.fromJSON (builtins.readFile ./meta.json);
+    refs = builtins.removeAttrs inputs args;
+  };
+}
