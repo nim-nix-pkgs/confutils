@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-confutils-master.flake = false;
+  inputs.src-confutils-master.ref   = "refs/heads/master";
   inputs.src-confutils-master.owner = "status-im";
-  inputs.src-confutils-master.ref   = "master";
   inputs.src-confutils-master.repo  = "nim-confutils";
   inputs.src-confutils-master.type  = "github";
   
