@@ -11,7 +11,6 @@
   inputs.src-confutils-master.ref   = "refs/heads/master";
   inputs.src-confutils-master.owner = "status-im";
   inputs.src-confutils-master.repo  = "nim-confutils";
-  inputs.src-confutils-master.dir   = "";
   inputs.src-confutils-master.type  = "github";
   
   inputs."stew".owner = "nim-nix-pkgs";
