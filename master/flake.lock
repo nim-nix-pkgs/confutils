@@ -43,11 +43,11 @@
     "src-confutils-master": {
       "flake": false,
       "locked": {
-        "lastModified": 1648973386,
-        "narHash": "sha256-kSfwEe7LQP0al6g8uNh+tl5yAxoBCEZfz3BGbaVoMCE=",
+        "lastModified": 1652159886,
+        "narHash": "sha256-NOkd1AiK1AhdlJVpzBtg5nL/K2b8HyiEqStdKDLsxLk=",
         "owner": "status-im",
         "repo": "nim-confutils",
-        "rev": "60d71e802955b57381eda95c47a737d0ae801c67",
+        "rev": "d06f6187dca702ad884b9b948f52b26bf6596765",
         "type": "github"
       },
       "original": {
@@ -86,11 +86,11 @@
       },
       "locked": {
         "dir": "master",
-        "lastModified": 1651918478,
-        "narHash": "sha256-wiBtwRip0VLMYncSUDT8eXhLiHv8FIKGbWLLYkcjBOM=",
+        "lastModified": 1652391604,
+        "narHash": "sha256-7p3BXn50fHxA73T0QHjMPkwfOh4G7CKKgP6r4eMZ98Y=",
         "owner": "nim-nix-pkgs",
         "repo": "stew",
-        "rev": "889d0cefb3c565138000d466af4162c6b4adb91e",
+        "rev": "866cb214ef8d0a0780e6147b04e2a1466fc000e6",
         "type": "github"
       },
       "original": {
