@@ -1,2 +1,0 @@
-type
-  SInt* = distinct int
